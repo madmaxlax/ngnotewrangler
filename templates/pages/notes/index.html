@@ -3,13 +3,17 @@
         <div class="not">
             <h1 title="No">Notes</h1>
         </div>
-
-        <div class="not">
-            <a class="car">
-                <div class="">
-                    <h2 class="">
-                        <p>{{note}}</p>
+        <p ng-if="createController.errors">{{createController.errors}}</p>
+        <div class="note-wrapper">
+            <a class="card-notes" ng-repeat="note in indexController.notes" ng-href="#/notes/{{note.id}}">
+                <div class="card" title="{{note.title}}">
+                    <div ng-if="icon">
+                        <i class="icon icon-card {{note.icon}]"></i>
+                    </div>
+                    <h2 class="h3">
+                       {{note.title}} 
                     </h2>
+                    <p>{{note.note}}</p>
                 </div>
             </a>
         </div>
