@@ -18,8 +18,6 @@ angular.module('NoteWrangler')
         .when('/users',{
             templateUrl: 'templates/pages/users/index.html'
         })
-        .when('/',{
-            templateUrl: 'templates/pages/notes/index.html'
-        })
+        .when('/',{redirectTo: '/notes'})
         .otherwise( {redirectTo: '/'});
     });

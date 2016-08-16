@@ -1,0 +1,13 @@
+<div class="panel panel-default card" title="{{note.title}}">
+    <div class="panel-heading">
+
+        <h2 class="h3">
+            {{header}}
+        </h2>
+        <h2 class="h3">
+            <a ng-href="#/notes/{{note.id}}">{{note.title}}</a>
+            <i ng-if="note.icon" class="glyphicon {{note.icon}}"></i>
+        </h2>
+    </div>
+    <p class="panel-body hidden" ng-bind-html="note.note"></p>
+</div>

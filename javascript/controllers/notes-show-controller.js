@@ -1,5 +1,6 @@
 /// <reference path="C:\Apps\Dropbox\Dev\typings\angularjs\angular.d.ts" />
 /// <reference path="C:\Apps\Dropbox\Dev\typings\angularjs\angular-route.d.ts" />
+/// <reference path="C:\Apps\Dropbox\Dev\ngnotewrangler\notes.db.js" />
 
 angular.module('NoteWrangler').controller('NotesShowController',function ($http, $routeParams) {
     var controller = this;
@@ -7,12 +8,5 @@ angular.module('NoteWrangler').controller('NotesShowController',function ($http,
     //     controller.note = data;
     // });
     //console.log('here');
-    controller.note = {
-        id:1,
-        title: 'TitleNote1',
-        icon: 'icon1',
-        description:'descriponslkdn`1',
-        note:'actualnote',
-        user:'Max'
-    };
+    controller.note = notesdb[$routeParams.id-1];
 });

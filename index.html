@@ -1,28 +1,36 @@
 <html lang="en" ng-app="NoteWrangler">
-    <head>
 
-    </head>
-    <body>
-        <div class="nav-list">
-            <a href="#/notes"> Notes </a>
-            <a href="#/users"> Users </a>
-        </div>
+<head>
+    <title>Note Wrangler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
-        <div class="hero-wrapper">
-            
+<body>
+    <ul class="nav nav-tabs nav-list">
+        <li><a href="#/users"> Users </a></li>
+        <li><a href="#/notes"> Notes </a></li>
+    </ul>
+    <div class="container">
+        <div class="hero-wrapper jumbotron">
+            <h1><a href="index.html">Note Wrangler</a></h1>
         </div>
         <div class="main-wrapper">
             <!--will come from templates-->
             <div ng-view=""></div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-        <script src="javascript/app.js"></script>
-        <script src="javascript/routes.js"></script>
-        <script src="javascript/controllers/notes-create-controller.js"></script>
-        <script src="javascript/controllers/notes-edit-controller.js"></script>
-        <script src="javascript/controllers/notes-index-controller.js"></script>
-        <script src="javascript/controllers/notes-show-controller.js"></script>
-    </body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="javascript/vendor/md2html.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/routes.js"></script>
+    <script src="notes.db.js"></script>
+    <script src="javascript/controllers/notes-create-controller.js"></script>
+    <script src="javascript/controllers/notes-edit-controller.js"></script>
+    <script src="javascript/controllers/notes-index-controller.js"></script>
+    <script src="javascript/controllers/notes-show-controller.js"></script>
+    <script src="javascript/directives/nw-card.js"></script>
+</body>
+
 </html>

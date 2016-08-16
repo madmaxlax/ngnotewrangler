@@ -1,7 +1,8 @@
 <div class="card">
-    <h1>{{note.title}}</h1>
+    <h1>{{showController.note.title}}</h1>
     <p>Created by : {{showController.note.user || showController.note.user.username}}</p>
 
+            <i class="glyphicon {{showController.note.icon}}"></i>
     <h3>Description:</h3>
     <p>{{showController.note.description}}</p>
 
