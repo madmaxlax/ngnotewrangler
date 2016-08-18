@@ -19,8 +19,8 @@ angular.module("NoteWrangler")
                     //console.log(attrs.note);
                     element.find("div.card>p ").toggleClass("hidden");
                 });
-                var converter = new showdown.Converter();
-                scope.note.note = $sce.trustAsHtml(converter.makeHtml(scope.note.note));
+                //var converter = new showdown.Converter();
+                //scope.note.note = $sce.trustAsHtml(converter.makeHtml(scope.note.note));
             }
         };
     });

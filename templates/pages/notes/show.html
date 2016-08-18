@@ -7,5 +7,7 @@
     <p>{{showController.note.description}}</p>
 
     <h3>Contents:</h3>
-    <p>{{showController.note.note}}</p>
+    <!--<p>{{showController.note.note}}</p>-->
+    <!--<p ng-bind-html="showController.note.note"></p>-->
+    <markdown md-text="showController.note.note"></markdown>
 </div>
