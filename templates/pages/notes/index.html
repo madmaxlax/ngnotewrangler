@@ -4,7 +4,7 @@
             <h1 title="No">Notes</h1>
         </div>
         <p ng-if="createController.errors">{{createController.errors}}</p>
-        <div class="note-wrapper row">
+        <div class="note-wrapper row-fluid">
             <div class="card-notes col-sm-6" ng-repeat="note in indexController.notes" >
                 <nw-card note="note"></nw-card>
             </div>
