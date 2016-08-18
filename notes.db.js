@@ -24,7 +24,14 @@ var notesdb = [{
    }];
 
    var usersdb = [{
+        id:1,
         name : "Max",
         email: 'maxstruever@gmail.com',
         bio: "Chill bro"
+   },
+   {
+        id:2,
+        name : "FLex",
+        email: 'akminsky9@gmail.com',
+        bio: "Chill chick"
    }];

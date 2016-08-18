@@ -16,7 +16,9 @@ angular.module('NoteWrangler')
         //     templateUrl: 'notes.db'
         // })
         .when('/users',{
-            templateUrl: 'templates/pages/users/index.html'
+            templateUrl: 'templates/pages/users/index.html',
+            controller: 'UsersIndexController',
+            controllerAs: 'usersCtrlr'
         })
         .when('/',{redirectTo: '/notes'})
         .otherwise( {redirectTo: '/'});

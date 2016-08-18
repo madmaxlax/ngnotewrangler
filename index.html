@@ -6,10 +6,11 @@
 </head>
 
 <body>
-    <ul class="nav nav-tabs nav-list">
-        <li><a href="#/users"> Users </a></li>
+    <!--<ul class="nav nav-tabs nav-list">
+        <li ng-class="{ active: (console.log($location.path().indexOf('/users')))}"><a href="#/users" > Users </a></li>
         <li><a href="#/notes"> Notes </a></li>
-    </ul>
+    </ul>-->
+    <nw-headers></nw-headers>
     <div class="container">
         <div class="hero-wrapper jumbotron">
             <h1><a href="index.html">Note Wrangler</a></h1>
@@ -23,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
     <script src="javascript/vendor/md2html.js"></script>
+    <script src="javascript/vendor/md5.js"></script>
     <script src="javascript/app.js"></script>
     <script src="javascript/routes.js"></script>
     <script src="notes.db.js"></script>
@@ -30,8 +32,10 @@
     <script src="javascript/controllers/notes-edit-controller.js"></script>
     <script src="javascript/controllers/notes-index-controller.js"></script>
     <script src="javascript/controllers/notes-show-controller.js"></script>
+    <script src="javascript/controllers/users-index-controller.js"></script>
     <script src="javascript/directives/nw-card.js"></script>
     <script src="javascript/directives/markdown-html.js"></script>
+    <script src="javascript/directives/headers.js"></script>
     <script src="javascript/services/note.js"></script>
     <script src="javascript/services/gravatar.js"></script>
 </body>
