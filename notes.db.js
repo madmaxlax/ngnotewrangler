@@ -22,3 +22,9 @@ var notesdb = [{
         note:'**This is 3** actualnote 3 note content  note **with some bold**',
         user:'Larrry'
    }];
+
+   var usersdb = [{
+        name : "Max",
+        email: 'maxstruever@gmail.com',
+        bio: "Chill bro"
+   }];
