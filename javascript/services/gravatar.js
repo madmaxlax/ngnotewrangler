@@ -2,16 +2,18 @@
 
 
 var app = angular.module("NoteWrangler")
-    .factory("Gravatar", function GravatarFactory() {
+    .provider("Gravatar", function GravatarProvider() {
         var avatarSize = 80;
         var avatarUrl = "http://www.gravatar.com/avatar/";
-        return {
+        this.setSize = function(size){
+            avatarSize = size;
+        };
+        this.$get = function() {
             //CryptoJS.MD5(email);
             //Gravatar.generate("maxstruever@gmail.com");
             //generate: function(email){
-            function(email){
+            return function(email){
                 return avatarUrl + MD5(email) + "?size="+avatarSize.toString();
-            }
+            };
         };
-        
     });
