@@ -2,7 +2,7 @@
 /// <reference path="C:\Apps\Dropbox\Dev\typings\angularjs\angular-route.d.ts" />
 
 
-var app = angular.module("NoteWrangler", ['ngRoute'])
+var app = angular.module("NoteWrangler", ['ngRoute', 'ngResource'])
     .config(function (GravatarProvider){
         GravatarProvider.setSize(100);
     });

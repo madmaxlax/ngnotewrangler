@@ -16,6 +16,7 @@
             <h1><a href="index.html">Note Wrangler</a></h1>
         </div>
         <div class="main-wrapper">
+            <nw-category-select></nw-category-select>
             <!--will come from templates-->
             <div ng-view=""></div>
         </div>
@@ -23,6 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.min.js"></script>
     <script src="javascript/vendor/md2html.js"></script>
     <script src="javascript/vendor/md5.js"></script>
     <script src="javascript/app.js"></script>
@@ -36,6 +38,8 @@
     <script src="javascript/directives/nw-card.js"></script>
     <script src="javascript/directives/markdown-html.js"></script>
     <script src="javascript/directives/headers.js"></script>
+    <script src="javascript/directives/nw-category-select.js"></script>
+    <script src="javascript/directives/nw-category-item.js"></script>
     <script src="javascript/services/note.js"></script>
     <script src="javascript/services/gravatar.js"></script>
 </body>
