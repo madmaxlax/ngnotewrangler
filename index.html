@@ -13,10 +13,12 @@
     <nw-headers></nw-headers>
     <div class="container">
         <div class="hero-wrapper jumbotron">
-            <h1><a href="index.html">Note Wrangler</a></h1>
+            <h1 title="Title test"><a href="index.html">Note Wrangler</a></h1>
         </div>
         <div class="main-wrapper">
-            <nw-category-select></nw-category-select>
+            <nw-category-select active-category="activeCategory" ></nw-category-select>
+            
+            <input type="text" ng-model="search.$" placeholder="Filter notes" />
             <!--will come from templates-->
             <div ng-view=""></div>
         </div>
@@ -27,6 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.min.js"></script>
     <script src="javascript/vendor/md2html.js"></script>
     <script src="javascript/vendor/md5.js"></script>
+    <script src="javascript/vendor/bootstrap.min.js"></script>
     <script src="javascript/app.js"></script>
     <script src="javascript/routes.js"></script>
     <script src="notes.db.js"></script>
@@ -38,6 +41,7 @@
     <script src="javascript/directives/nw-card.js"></script>
     <script src="javascript/directives/markdown-html.js"></script>
     <script src="javascript/directives/headers.js"></script>
+    <script src="javascript/directives/title.js"></script>
     <script src="javascript/directives/nw-category-select.js"></script>
     <script src="javascript/directives/nw-category-item.js"></script>
     <script src="javascript/services/note.js"></script>

@@ -7,6 +7,9 @@ angular.module("NoteWrangler")
             replace: true,
             restrict: 'E',
             templateUrl: 'templates/directives/nw-category-select.html',
+            scope:{
+                 activeCategory: "="
+            },
             link: function(scope, element, attrs) {
                 //scope.categories = Category.query();
                 scope.categories = categoriesdb;
